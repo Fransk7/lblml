@@ -1,7 +1,8 @@
 keywords = ['bold', 'italic', 'underline', 'strike', 'h1', 'h2', 'h3',
-            'h4', 'h5', 'h6', 'title', 'text', 'link', '!']
+            'h4', 'h5', 'h6', 'title', 'text', 'unorder', 'order', '-',
+            'link', '!']
 htmlWords = ['strong', 'em', 'u', 'strike', 'h1', 'h2', 'h3', 'h4', 'h5',
-             'h6', 'title', 'p']
+             'h6', 'title', 'p', 'ul', 'ol', 'li']
 
 fileName = input("Enter file name of file to be read: ")
 print("""
