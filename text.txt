@@ -1,0 +1,7 @@
+!|test
+bold|{
+italic|This is bold and italic
+h4|Bold and small
+h1|Bold and big
+text|Also bold
+bold|}
