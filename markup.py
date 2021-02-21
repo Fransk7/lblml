@@ -1,6 +1,6 @@
 keywords = ['bold', 'italic', 'underline', 'strike', 'h1', 'h2', 'h3',
             'h4', 'h5', 'h6', 'title', 'text', 'unorder', 'order', '-',
-            'link', '!']
+            'link', 'color', 'bgcolor', '!']
 htmlWords = ['strong', 'em', 'u', 'strike', 'h1', 'h2', 'h3', 'h4', 'h5',
              'h6', 'title', 'p', 'ul', 'ol', 'li']
 
@@ -12,7 +12,7 @@ file = open(fileName, 'r')
 writeFile = open(writeName, 'a')
 run = file.read()
 
-def readFile():
+def readWriteFile():
     toRun = run.split("\n")
 
     writeFile.write("<!DOCTYPE html>\n<html>\n<body>")
@@ -25,6 +25,10 @@ def readFile():
         if keywordCheck:
             if command == 'link':
                 writeFile.write("\n<a href=\""+value+"\">"+value+"</a>")
+            elif command == 'color':
+                writeFile.write("\n<style>\nbody {\n\tcolor: "+value+";\n}\n</style>")
+            elif command == 'bgcolor':
+                writeFile.write("\n<style>\nbody {\n\tbackground-color: "+value+";\n}\n</style>")
             else:
                 for j in range(len(htmlWords)):
                     if command == keywords[j] and value == '{':
@@ -38,7 +42,7 @@ def readFile():
         
     writeFile.write("\n</body>\n</html>")
 
-readFile()
+readWriteFile()
 file.close()
 writeFile.close()
 

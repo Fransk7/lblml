@@ -1,4 +1,6 @@
 !|test
+color|white
+bgcolor|blue
 bold|{
 italic|This is bold and italic
 h4|Bold and small
