@@ -4,8 +4,9 @@ keywords = ['bold', 'italic', 'underline', 'strike', 'h1', 'h2', 'h3',
 htmlWords = ['strong', 'em', 'u', 'strike', 'h1', 'h2', 'h3', 'h4', 'h5',
              'h6', 'title', 'p', 'ul', 'ol', 'li']
 
-fileName = input("Enter file name of file to be read: ")
-writeName = input("Enter file name of file to be written to: ")
+print("Welcome to the LBLML Transpiler\nPlease include the file extension (e.g. \'.txt\') when inputing file names")
+fileName = input("\n\nEnter name of file to be read: ")
+writeName = input("Enter name of file to be written to (if it doesn't exist, one will be created): ")
 
 file = open(fileName, 'r')
 writeFile = open(writeName, 'a')
