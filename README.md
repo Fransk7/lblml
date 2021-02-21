@@ -30,4 +30,6 @@ LBLML transpiles to HTML.
 - order | Makes an ordered list
 - \- | List element
 - link | Hyperlink
+- color | Colours the text
+- bgcolor | Gives the background a colour
 - ! | Comment (will not be seen in final HTML output)
