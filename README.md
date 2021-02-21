@@ -1,16 +1,19 @@
 # LBLML
 The Line By Line Markup Language
 
-### How Does it Work?
+## How Does it Work?
 LBLML is a markup language that goes line by line (hence the name).
 When you write a program in LBLML, you write ***two*** things: a command and
-a value (like this: command|value) separated by a pipe symbol. Sometimes a value 
+a value (like this: command|value) separated by a pipe symbol, no spaces. Sometimes a value 
 can be an open or closed curly brace, this symbolises that that command will cover multiple
 lines. Values that are not curly braces will only have their command cover
 that line. If you want to understand more of how it works, try the example
-project (text.txt) and run it to see the HTML output.
+project (text.txt) and run it in the Python program and then look at the outputed HTML file.
 
-### List of Commands
+## What Does LBLML Transpile To?
+LBLML transpiles to HTML.
+
+## List of Commands
 - bold | Makes text bold
 - italic | Makes text italicised
 - underline | Makes text underlined
