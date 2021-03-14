@@ -14,22 +14,24 @@ project (text.txt) and run it in the Python program and then look at the outpute
 LBLML transpiles to HTML.
 
 ## List of Commands
-- bold | Makes text bold
-- italic | Makes text italicised
-- underline | Makes text underlined
-- strike | Makes text have a strike through it
-- h1 | Heading one
-- h2 | Heading two
-- h3 | Heading three
-- h4 | Heading four
-- h5 | Heading five
-- h6 | Heading six
-- title | Gives your project a title
-- text | Lets you write text
-- unorder | Makes an unordered list
-- order | Makes an ordered list
-- \- | List element
-- link | Hyperlink
-- color | Colours the text
-- bgcolor | Gives the background a colour
-- ! | Comment (will not be seen in final HTML output)
+| LBLML | HTML | Description |
+| --- | --- | --- |
+| bold | `<strong>` | Makes text bold |
+| italic | `<em>` | Makes text italicised |
+| underline | `<u>` | Makes text underlined |
+| strike | `<strike>` | Makes text have a strike through it |
+| h1 | `<h1>` | Heading one |
+| h2 | `<h2>` | Heading two |
+| h3 | `<h3>` | Heading three |
+| h4 | `<h4>` | Heading four |
+| h5 | `<h5>` | Heading five |
+| h6 | `<h6>` | Heading six |
+| title | `<title>` | Gives your project a title |
+| text | `<p>` | Lets you write text |
+| unorder | `<ul>` | Makes an unordered list |
+| order | `<ol>` | Makes an ordered list |
+| \- | `<li>` | List element |
+| link | `<a href="URL">URL</a>` | Hyperlink |
+| color | `<script>p { color: value; }</script>` | Colours the text |
+| bgcolor | `<script>p { background-color: value; }</script>` | Gives the background a colour |
+| ! | N/A | Comment (will not be seen in final HTML output) |
